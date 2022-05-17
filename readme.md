@@ -12,4 +12,6 @@ V tomhle repu jsou uspořádány zdrojáky k úlohám na platformě CodeCritic z
     <img alt="cvičení 7" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%207-100%25-success?style=for-the-badge"/>
     <img alt="cvičení 8" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%208-100%25-success?style=for-the-badge"/>
     <img alt="cvičení 9" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%209-100%25-success?style=for-the-badge"/>
+    <img alt="cvičení 10a" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%2010a-100%25-success?style=for-the-badge"/>
+    <img alt="cvičení 10b" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%2010b-100%25-success?style=for-the-badge"/>
 </p>
