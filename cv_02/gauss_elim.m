@@ -11,23 +11,25 @@ function [x, U] = gauss_elim(A, b)
     
     %Smyčka pro přední eliminaci
     for i=1:rows
-        A(i:end, :) = sortrows(A(i:end, :), i, "descend")
+        %Seřazení řádků sestupně
+        A(i:end, :) = sortrows(A(i:end, :), i, "descend");
+        %A(i,i) - prvek na diagonále
         A(i,i)
         
+        %Pokud je prvek na diagonále velmi blízko nule, vyhodíme singular
+        %error
         if (abs(A(i, i)) <= 1e-15); error("singular"); end
 
         %Přičítání vhodných násobků řádku do nižších řádků tak, aby se
         %prvky pod vodícím prvek vynulovali
         for j=(i+1):rows
             A(j, :) = row2row(A(i, :), A(j, i) / A(i, i), A(j, :));
-            
-            %Kdyby tam náhodou vyšel kompletně nulový řádek, tak
-            
         end
     end
 
     %Přiřazení matice v horním stupňovitém tvaru do výstupní proměnné
-
+    %A rozlišení, jakým způsobem chceme výstup (jestli tam je vektor b nebo
+    %ne)
     if containsB
         U = A(:, 1:end - 1);
     else

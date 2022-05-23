@@ -49,7 +49,7 @@ end
 function [x] = vysetri_bod(f, fp, g, a, b, tol, lim)
     [bi_x] = bisection(f, a, b, tol, lim);
     [ne_x] = newton(f, fp, a, tol, lim);
-    [nd_x] = newton_diff(f, a, b, tol, lim);
+    [nd_x] = newton_diff(f, a, b, tol, lim)
     plot([bi_x ne_x nd_x], [g(bi_x) g(ne_x) g(nd_x)], '.', 'markersize', 24);
     plot([bi_x ne_x nd_x], [f(bi_x) f(ne_x) f(nd_x)], '.', 'markersize', 24);
 

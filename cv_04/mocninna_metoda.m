@@ -8,7 +8,19 @@
 %%
 
 function [vec, lambda] = mocninna_metoda(A, y0, tol, maxit)
+    %% Funkce realizující mocninnou metodu pro hledání vlastních čísel a vlastních vektorů
+    %% Vstupy
+    % A - Vstupní matice, jejíž vlastní čísla/vektory hledáme
+    % y0 - Počáteční odhad
+    % tol - Tolerance
+    % maxit - Maximální počet iterací
+    %% Výstupy:
+    % vec - Vlastní vektor
+    % lambda - Vlastní číslo
+    %% Program:
+    
     x = y0;
+    
     if (isrow(x))
         x = x';
     end
@@ -16,9 +28,13 @@ function [vec, lambda] = mocninna_metoda(A, y0, tol, maxit)
     lastLambda = NaN;
 
     for j=1:maxit
+        % Normalizovaní vektoru x
         u = x / norm(x);
+        % Maticové násobení matice A a normalizovaného vektoru u
         x = A * u;
+        % Násobení transponovaného normalizovaného vektoru u a (vektoru) aproximace x
         lambda = u' * x;
+        % Samotný normalizovaný vektor je vlastním vektorem matice
         vec = u;
 
         if (isnan(lastLambda))
@@ -28,14 +44,4 @@ function [vec, lambda] = mocninna_metoda(A, y0, tol, maxit)
             break;
         end
     end
-
-    vec, lambda
-    disp("Plati rovnost");
-    abs(A * vec - lambda * vec) < tol 
-
-    disp("Eig test");
-    [V, D] = eig(A);
-    abs(A*V - V*D) < tol
-
-
 end

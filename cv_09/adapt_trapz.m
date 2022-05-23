@@ -16,7 +16,7 @@ function [I,k] = adapt_trapz(f,a,b,maxlevel,tol)
         v = a:dx:b;
         v = arrayfun(@(x) f(x), v);
         v(2:end - 1) = v(2:end-1) .* 2;
-    
+
         I = sum(v) * (dx/2);
         if (abs(I - LastApprox) < tol)
             break;
