@@ -1,17 +1,23 @@
 # Seminář z matematiky 2
-V tomhle repu jsou uspořádány zdrojáky k úlohám na platformě CodeCritic z předmětu SEM2
+<p>
+    <img src="https://img.shields.io/badge/University%20-TUL-5948AD?labelColor=black&style=for-the-badge" alt="University - TUL" />
+    <img src="https://img.shields.io/badge/Faculty%20-FM-ea7603?labelColor=black&style=for-the-badge" alt="Faculty - FM" />
+    <img src="https://img.shields.io/badge/Course%20-NTI%2FSEM2-89e051?labelColor=black&style=for-the-badge" alt="Course - NTI/SEM2" />
+</p>
+
+Tento repozitář obsahuje zdrojové kódy k úlohám z předmětu [Seminář z matematiky 2](https://stag.tul.cz/ects/fakulty/FM/NTI/SEM2)
 
 ## Hodnocení kódů na CodeCritic
-<p align="left">
-    <img alt="cvičení 1" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%201-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 2" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%202-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 3" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%203-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 4" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%204-90%25-green?style=for-the-badge"/>
-    <img alt="cvičení 5" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%205-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 6" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%206-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 7" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%207-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 8" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%208-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 9" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%209-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 10a" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%2010a-100%25-success?style=for-the-badge"/>
-    <img alt="cvičení 10b" title="Follow me on Github" src="https://img.shields.io/badge/Cvičení%2010b-100%25-success?style=for-the-badge"/>
-</p>
+|Cvičení|Známka|Splněno|
+|:--:|:--:|:--:|
+|1|100%|✔️|
+|2|100%|✔️|
+|3|100%|✔️|
+|4|90%|✔️|
+|5|100%|✔️|
+|6|100%|✔️|
+|7|100%|✔️|
+|8|100%|✔️|
+|9|100%|✔️|
+|10a|100%|✔️|
+|10b|100%|✔️|
